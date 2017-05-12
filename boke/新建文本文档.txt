@@ -1,6 +1,6 @@
 主页：登录，查询,浏览最新的官方动态，标签
 个人主页：
-	 修改个人信息
+	 修改个人信息（隐私设置，修改密码）
 	,好友（显示好友，删除好友，添加好友）
 	，动态，发布动态 查看好友动态 删除动态
 	，我的博文
@@ -12,6 +12,7 @@
 好友主页：好友动态，好友博文，好友信息,相册
 	（删除好友/添加好友）
 我的博文页面:
+	写文章
 	博文类别
 	博文数量
 博文子页面：发布时间
@@ -20,3 +21,25 @@
 	标签
 	修改 显示修改次数
 	删除
+
+
+
+数据库：
+	《user: 》
+	user_head<text,20> user_sex<boolean> user_resume个人简介<text，20>
+	userid<int,20>   name<text,20>  email<text,20> password<text,20> follow<text,225> followby<text,225>
+	tag<text,30>	eassynum<int,225>
+	
+	《dynamic:》
+	userid<int,20>   content<text,225> time<text,20> good<int,20> commentid<int,200>
+	
+	《eassy：》
+	userid<int,20>  content<text,225> time<text,20>发布时间 good<int,20>点赞数量 commentid<int,200>
+	type<text,10>类型	tag<text,30>标签  update_time<int,20>修改次数
+	
+	《comment：》
+	commentid<int,200> content<text,225> time<text,20>
+	
+	《album:》
+	userid<int,20> picture_resources<text,20>  from<int,1>(属于哪个相册) name<text,20>
+	
