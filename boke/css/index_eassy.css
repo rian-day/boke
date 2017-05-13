@@ -27,6 +27,30 @@
 #content #box-left #lunbo img{
 	height: 300px;
 }
+#content #box-left #nav{
+	height: 100px;
+	overflow: hidden;
+	cursor: pointer;
+}
+#content #box-left #nav #public{
+	width:100%;
+	height: 100px;
+	line-height: 100px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	transition: 1s;
+	background: #eee;
+}
+#content #box-left #nav #person{
+	width: 100%;
+	height: 0px;
+	transition: 1s;
+	font-size: 0px;
+	font-weight: bold;
+	text-align: center;
+	background: #ddd;
+}
 #content #box-left #eassy-box{
 	background: #fff;
 }

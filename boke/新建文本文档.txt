@@ -30,7 +30,7 @@
 	userid<int,20>   name<text,20>  email<text,20> password<text,20> follow<text,225> followby<text,225>
 	tag<text,30>	eassynum<int,225>
 	
-	¡¶dynamic:¡·
+	¡¶dynamic:¡·£¨¶¯Ì¬)
 	userid<int,20>   content<text,225> time<text,20> good<int,20> commentid<int,200>
 	
 	¡¶eassy£º¡·
